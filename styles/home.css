@@ -1,0 +1,364 @@
+/* ======================================================
+   RESET & BASE
+====================================================== */
+@import url('../styles/style.css');
+
+/* ======================================================
+   NAVBAR (Figma: 1440 x 94, padding 25 / 80)
+====================================================== */
+.navbar {
+    width: 100%;
+    max-width: 1440px;
+    height: 94px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 80px;
+
+    background-color: rgba(17, 19, 21, 1);
+}
+
+/* kiri */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-menu a {
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: rgba(207, 207, 207, 1);
+    text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* kanan */
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ======================================================
+   HERO SECTION (Figma: 1440 x 587)
+====================================================== */
+.hero {
+    width: 100%;
+    max-width: 1440px;
+    height: 587px;
+    margin: 0 auto;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+/* background image */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+}
+
+/* overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.25) 0%,
+        rgba(0,0,0,0.65) 100%
+    );
+
+    z-index: 2;
+}
+
+/* content */
+.hero-content {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    max-width: 1280px;
+
+    padding-left: 80px;
+}
+
+/* title */
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* description — Body Large */
+.hero-desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    max-width: 600px;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* actions */
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-primary {
+    height: 36px;
+    padding: 0 18px;
+    border-radius: 18px;
+    border: none;
+
+    background-color: rgba(31, 74, 255, 1);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    height: 36px;
+    padding: 0 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.4);
+
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.badge-age {
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.4);
+    font-size: 12px;
+}
+
+/* ======================================================
+   CONTENT SECTION
+====================================================== */
+.content {
+    max-width: 1440px;
+    margin: 40px auto;
+    padding: 0 80px;
+}
+
+.section {
+    margin-bottom: 48px;
+}
+
+.section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* horizontal list */
+.card-row {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* movie card */
+.movie-card {
+    min-width: 180px;
+    position: relative;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* badge */
+.badge,
+.badge-top {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 4px;
+
+    background-color: rgba(31, 74, 255, 1);
+}
+
+/* ======================================================
+   FOOTER (Figma: padding 60 / 80, gap 20)
+====================================================== */
+.footer {
+    width: 100%;
+    background-color: rgba(24, 26, 28, 1);
+    border-top: 1px solid rgba(231, 227, 252, 0.23);
+    color: rgba(207, 207, 207, 1);
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    padding: 60px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* brand */
+.footer-brand {
+    max-width: 260px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* section */
+.footer-section h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.75;
+}
+
+.footer-links span {
+    font-size: 13px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.footer-links span:hover {
+    opacity: 1;
+}
+
+/* genre grid */
+.grid-genre {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 10px 32px;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+@media (max-width: 1024px) {
+    .navbar,
+    .hero-content,
+    .content,
+    .footer-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .hero {
+        height: 480px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .grid-genre {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hero {
+        height: 420px;
+    }
+
+    .hero-content {
+        padding-left: 20px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 32px;
+    }
+
+    .grid-genre {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
